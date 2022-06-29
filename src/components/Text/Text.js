@@ -1,11 +1,13 @@
-import { View,Text as RNtext} from "react-native";
+import { View,Text as RNtext, StyleSheet} from "react-native";
+import { presets } from "./textPreset";
 
 
 
-const Text = ({children}) => {
+const Text = ({children,preset="default",style}) => {
+  const TextStyle =StyleSheet.compose(presets[preset],style);
   return (
     <View>
-      <Text>{children}</Text>
+      <RNtext style={TextStyle}>{children}</RNtext>
     </View>
   );
 };
