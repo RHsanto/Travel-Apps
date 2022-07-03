@@ -2,17 +2,14 @@ import { StatusBar } from 'expo-status-bar';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Home from './src/screens/Home';
-import {
-  useFonts,
-  Lato_400Regular,
-  Lato_700Bold,
-
-} from '@expo-google-fonts/lato';
-import Liked from './src/screens/Liked';
-import Profile from './src/screens/Profile';
+import {useFonts,Lato_400Regular,Lato_700Bold,} from '@expo-google-fonts/lato';
 import { colors } from './src/theme/color';
 import { StyleSheet } from 'react-native';
+import { Entypo ,FontAwesome,FontAwesome5} from '@expo/vector-icons';
+import Home from './src/screens/Home';
+import Liked from './src/screens/Liked';
+import Profile from './src/screens/Profile';
+import Details from './src/screens/Details';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -22,13 +19,21 @@ const MyTabs=()=>{
     <Tab.Navigator
     tabBarOptions={{
       style:styles.tabBar,
-      activeTinColor:colors.orange,
-      inactiveTinColor:colors.grey
+      activeTintColor:colors.orange,
+      inactiveTintColor:colors.grey,
+      showLabel:false,
     }}
     >
-      <Tab.Screen name="Home" component={Home} />
-      <Tab.Screen name="Liked" component={Liked} />
-      <Tab.Screen name="Profile" component={Profile} />
+      <Tab.Screen name="Home" component={Home} options={{
+        tabBarIcon:({color})=><Entypo name="home" size={32} color={color} /> ,
+      }} />
+      <Tab.Screen name="Liked" component={Liked} options={{
+        tabBarIcon:({color})=><FontAwesome name="heart" size={32} color={color} />,
+      }}
+       />
+      <Tab.Screen name="Profile" component={Profile} options={{
+        tabBarIcon:({color})=> <FontAwesome5 name="user-alt" size={32} color={color} />,
+      }} />
     </Tab.Navigator>
   );
   }
@@ -48,6 +53,7 @@ const MyTabs=()=>{
     <NavigationContainer>
     <Stack.Navigator  screenOptions={{headerShown:false}}>
       <Stack.Screen name="MyTabs" component={MyTabs} />
+      <Stack.Screen name="Details" component={Details} />
       </Stack.Navigator>
     </NavigationContainer>
     <StatusBar style="auto" />
@@ -60,8 +66,6 @@ export default App;
 
 const styles= StyleSheet.create({
   tabBar:{
-    backgroundColor:colors.white,
-    borderTopLeftRadius:20,
-    borderTopRightRadius:20
+  backgroundColor:'#524'
   }
 })
