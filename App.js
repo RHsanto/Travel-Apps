@@ -64,8 +64,10 @@ const MyTabs=()=>{
 
 export default App;
 
-const styles= StyleSheet.create({
-  tabBar:{
-  backgroundColor:'#524'
-  }
-})
+const styles = StyleSheet.create({
+  tabBar: {
+    backgroundColor: colors.white,
+    borderTopLeftRadius: 20,
+    borderTopRightRadius: 20,
+  },
+});
