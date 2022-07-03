@@ -1,5 +1,6 @@
 import React from 'react';
-import { Image, Pressable, SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Image, Pressable, SafeAreaView, ScrollView, StyleSheet,  Text,  View }
+ from 'react-native';
 import { spacing } from '../theme/spacing';
 import { FontAwesome } from '@expo/vector-icons';
 const Home = ({navigation}) => {
@@ -15,12 +16,14 @@ const Home = ({navigation}) => {
       <Image style={styles.profileImg}  source={require('../../assets/images/person.png')} />
      </View>
    </View>
+  {/* details */}
    <View>
-    <Pressable onPress={()=>{
-      alert('5555')
-    }}>
-Hello
-      
+    <Pressable
+    onPress={()=>{
+      navigation.navigate('Details')
+    }}
+    >
+     <Text>Hello </Text>
     </Pressable>
    </View>
 
