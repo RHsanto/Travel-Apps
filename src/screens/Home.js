@@ -1,8 +1,8 @@
 import React from 'react';
-import { Image, SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Image, Pressable, SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { spacing } from '../theme/spacing';
 import { FontAwesome } from '@expo/vector-icons';
-const Home = () => {
+const Home = ({navigation}) => {
   return (
   <SafeAreaView>
     <ScrollView>
@@ -14,6 +14,14 @@ const Home = () => {
      <View>
       <Image style={styles.profileImg}  source={require('../../assets/images/person.png')} />
      </View>
+   </View>
+   <View>
+    <Pressable onPress={()=>{
+      alert('5555')
+    }}>
+Hello
+      
+    </Pressable>
    </View>
 
 
