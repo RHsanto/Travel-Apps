@@ -17,6 +17,7 @@ const Tab = createBottomTabNavigator();
 const TabNavigator = () => {
   return (
     <Tab.Navigator
+    screenOptions={{headerShown:false}}
       tabBarOptions={{
         style: styles.tabBar,
         activeTintColor: colors.orange,
@@ -64,16 +65,12 @@ const TabNavigator = () => {
     return null;
   } 
   return (
-
-
     <NavigationContainer>
     <Stack.Navigator  screenOptions={{headerShown:false}}>
       <Stack.Screen name="TabNavigator" component={TabNavigator} />
       <Stack.Screen name="Details" component={Details} />
       </Stack.Navigator>
     </NavigationContainer>
-    
- 
   );
 }
 
