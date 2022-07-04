@@ -14,29 +14,45 @@ import Details from './src/screens/Details';
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 
-const MyTabs=()=>{
+const TabNavigator = () => {
   return (
     <Tab.Navigator
-    tabBarOptions={{
-      style:styles.tabBar,
-      activeTintColor:colors.orange,
-      inactiveTintColor:colors.grey,
-      showLabel:false,
-    }}
-    >
-      <Tab.Screen name="Home" component={Home} options={{
-        tabBarIcon:({color})=><Entypo name="home" size={32} color={color} /> ,
-      }} />
-      <Tab.Screen name="Liked" component={Liked} options={{
-        tabBarIcon:({color})=><FontAwesome name="heart" size={32} color={color} />,
-      }}
-       />
-      <Tab.Screen name="Profile" component={Profile} options={{
-        tabBarIcon:({color})=> <FontAwesome5 name="user-alt" size={32} color={color} />,
-      }} />
+      tabBarOptions={{
+        style: styles.tabBar,
+        activeTintColor: colors.orange,
+        inactiveTintColor: colors.gray,
+        showLabel: false,
+      }}>
+      <Tab.Screen
+        name="Home"
+        component={Home}
+        options={{
+          tabBarIcon: ({color}) => (
+            <Entypo name="home" size={32} color={color} />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Liked"
+        component={Liked}
+        options={{
+          tabBarIcon: ({color}) => (
+            <FontAwesome name="heart" size={32} color={color} />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Profile"
+        component={Profile}
+        options={{
+          tabBarIcon: ({color}) => (
+            <FontAwesome5 name="user-alt" size={32} color={color} />
+          ),
+        }}
+      />
     </Tab.Navigator>
   );
-  }
+};
  const App =()=> {
   let [fontsLoaded] = useFonts({
     Lato_400Regular,
@@ -49,15 +65,14 @@ const MyTabs=()=>{
   } 
   return (
 
-    <> 
+
     <NavigationContainer>
     <Stack.Navigator  screenOptions={{headerShown:false}}>
-      <Stack.Screen name="MyTabs" component={MyTabs} />
+      <Stack.Screen name="TabNavigator" component={TabNavigator} />
       <Stack.Screen name="Details" component={Details} />
       </Stack.Navigator>
     </NavigationContainer>
-    <StatusBar style="auto" />
-    </>
+    
  
   );
 }
