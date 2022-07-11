@@ -58,8 +58,7 @@ const Home = ({navigation}) => {
       renderItem={renderDiscoverItem}
       keyExtractor={(item) => item.id}
       horizontal
-      showsHorizontalScrollIndicator={false}
-        />
+      showsHorizontalScrollIndicator={false}/>
      </View>
     </View>
 
