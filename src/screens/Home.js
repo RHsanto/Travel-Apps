@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, Pressable,FlatList, SafeAreaView, ScrollView, StyleSheet, View, ImageBackground,TouchableOpacity }
+import { Image,FlatList, SafeAreaView, ScrollView, StyleSheet, View, ImageBackground,TouchableOpacity }
  from 'react-native';
 import { spacing } from '../theme/spacing';
 import { FontAwesome } from '@expo/vector-icons';
