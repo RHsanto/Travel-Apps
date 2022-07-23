@@ -64,7 +64,10 @@ const Home = ({navigation}) => {
       showsHorizontalScrollIndicator={false}/>
      </View>
     </View>
-
+{/* Activities */}
+   <View>
+    
+   </View>
 
     </View>
     </ScrollView>
