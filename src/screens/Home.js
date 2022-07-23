@@ -151,7 +151,7 @@ activitiesTitle:{
 },
 activitiesSubTitle:{
   marginTop:15,
-  color:colors.black
+  color:colors.grey2
 },
 actView:{
   margin:spacing[6]
