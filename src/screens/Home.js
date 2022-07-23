@@ -2,9 +2,9 @@ import React from 'react';
 import { Image,FlatList, SafeAreaView, ScrollView, StyleSheet, View, ImageBackground,TouchableOpacity }
  from 'react-native';
 import { spacing } from '../theme/spacing';
-import { FontAwesome } from '@expo/vector-icons';
-import Text from '../components/Text/Text';
+import { FontAwesome, FontAwesome5 } from '@expo/vector-icons';
 import { colors } from '../theme/color';
+import Text from '../components/Text/Text';
 import discoverData from '../../assets/data/discoverData'
 const Home = ({navigation}) => {
     {/* here render all data */}
@@ -25,7 +25,10 @@ const Home = ({navigation}) => {
             imageStyle={styles.discoverItemImage}>
             <Text style={styles.discoverItemTitle}>{item.title}</Text>
             <View style={styles.discoverItemLocationWrapper}>
-              <Text style={styles.discoverItemLocationText}>{item.location}</Text>
+              <FontAwesome5  name="map-marker-alt" size={15} color="white" />
+              <Text style={styles.discoverItemLocationText}>
+              {item.location}
+              </Text>
             </View>
           </ImageBackground>
         </TouchableOpacity>
@@ -123,6 +126,9 @@ discoverItemLocationText: {
   fontSize: 14,
   color: colors.white,
 },
+locationIcon:{
+  
+}
  })
 
 
