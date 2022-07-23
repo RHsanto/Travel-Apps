@@ -7,6 +7,7 @@ import { colors } from '../theme/color';
 import Text from '../components/Text/Text';
 import discoverData from '../../assets/data/discoverData'
 import activitiesData from '../../assets/data/activitiesData';
+import learnMoreData from '../../assets/data/learnMoreData';
 const Home = ({navigation}) => {
     {/* here render all data */}
     const renderDiscoverItem = ({item}) => {
@@ -35,6 +36,7 @@ const Home = ({navigation}) => {
         </TouchableOpacity>
       );
     };
+    // render activities data
     const renderActivitiesItem =({item})=>{
      return (
       <View style={styles.actView}>
@@ -42,6 +44,15 @@ const Home = ({navigation}) => {
         <Text style={styles.activitiesSubTitle}>{item.title}</Text>
       </View>
      )
+    }
+    // render learn data
+
+    const renderLearnData =({item})=>{
+      return(
+       <View style={styles.learnView}>
+        <Image style={styles.learnImage} source={item.image} />
+       </View>
+      )
     }
   return (
   <SafeAreaView>
@@ -85,7 +96,16 @@ const Home = ({navigation}) => {
     showsHorizontalScrollIndicator={false}
      />
    </View>
-
+{/* Learn More */}
+   <View>
+    <Text preset='h2'>Learn More</Text>
+    <FlatList
+    data={learnMoreData}
+    renderItem={renderLearnData}
+    keyExtractor={(item)=> item.id}
+    horizontal
+     />
+   </View>
     </View>
     </ScrollView>
   </SafeAreaView>
@@ -156,7 +176,14 @@ activitiesSubTitle:{
 actView:{
   margin:spacing[6]
 },
+learnView:{
+  marginTop:spacing[5]
+},
+learnImage:{
+marginRight:spacing[5],
+borderRadius:spacing[5],
 
+}
  })
 
 
