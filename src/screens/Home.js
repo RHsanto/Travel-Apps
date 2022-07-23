@@ -6,6 +6,7 @@ import { FontAwesome, FontAwesome5 } from '@expo/vector-icons';
 import { colors } from '../theme/color';
 import Text from '../components/Text/Text';
 import discoverData from '../../assets/data/discoverData'
+import activitiesData from '../../assets/data/activitiesData';
 const Home = ({navigation}) => {
     {/* here render all data */}
     const renderDiscoverItem = ({item}) => {
@@ -34,6 +35,14 @@ const Home = ({navigation}) => {
         </TouchableOpacity>
       );
     };
+    const renderActivitiesItem =({item})=>{
+     return (
+      <View style={styles.actView}>
+        <Image style={styles.actImage} source={item.image} />
+        <Text style={styles.activitiesSubTitle}>{item.title}</Text>
+      </View>
+     )
+    }
   return (
   <SafeAreaView>
     <ScrollView>
@@ -66,7 +75,15 @@ const Home = ({navigation}) => {
     </View>
 {/* Activities */}
    <View>
-    
+    <Text style={styles.activitiesTitle} preset='h2'>Activities</Text>
+{/* render activities data */}
+    <FlatList
+    data={activitiesData}
+    renderItem={renderActivitiesItem}
+    keyExtractor={(item)=>item.id}
+    horizontal
+    showsHorizontalScrollIndicator={false}
+     />
    </View>
 
     </View>
@@ -129,9 +146,17 @@ discoverItemLocationText: {
   fontSize: 14,
   color: colors.white,
 },
-locationIcon:{
-  
-}
+activitiesTitle:{
+  marginTop:spacing[8]
+},
+activitiesSubTitle:{
+  marginTop:15,
+  color:colors.black
+},
+actView:{
+  margin:spacing[6]
+},
+
  })
 
 
