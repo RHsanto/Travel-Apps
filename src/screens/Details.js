@@ -23,13 +23,16 @@ const Details = ({route}) => {
             </View>
     </View> 
  </ImageBackground>
-
- 
+ {/* Description */}
+ <View style={styles.descriptionView}>
+  <Text style={styles.descripTitle} preset='h2'>Description</Text>
+  <Text>{description}</Text>
+ </View>
 </View>
 
 
       </ScrollView>
-    </SafeAreaView>
+  </SafeAreaView>
   );
 };
 
@@ -55,5 +58,16 @@ const styles = StyleSheet.create({
   discoverItemLocationText:{
     color:colors.white,
     marginLeft:10
+  },
+  descriptionView:{
+   borderTopRightRadius:25,
+   borderTopLeftRadius:25,
+   backgroundColor:colors.white,
+   marginTop:-20
+  },
+  descripTitle:{
+    paddingLeft:spacing[5],
+    marginTop:spacing[8],
+    marginBottom:spacing[5]
   }
 })
