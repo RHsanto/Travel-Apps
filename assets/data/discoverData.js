@@ -16,7 +16,7 @@ const discoverData=[
     title:'Hiking the Grand Canyon ',
     location:'USA',
     image:require('../images/canyon.png'),
-    fullImage:require('../images/canyon (1).png'),
+    fullImage:require('../images/canyon.png'),
     description:'Great day hikes and backpacking routes on the North and South Rim of this century-old national park include easy hikes overlooking the rim and more rugged trekking options that descend into the canyon.',
     liked:true,
     price:350,
