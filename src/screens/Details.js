@@ -2,7 +2,7 @@ import React from 'react';
 import { ImageBackground, Pressable, SafeAreaView, ScrollView, 
   StyleSheet, View } from 'react-native';
 import Text from '../components/Text/Text';
-import { FontAwesome5 } from '@expo/vector-icons';
+import { FontAwesome5 ,AntDesign} from '@expo/vector-icons';
 import { colors } from '../theme/color';
 import { spacing } from '../theme/spacing';
 const Details = ({route}) => {
@@ -26,7 +26,10 @@ const Details = ({route}) => {
  </ImageBackground>
  {/* Description */}
  <View style={styles.descriptionView}>
-
+ {/* love */}
+ <View  style={styles.loveIcon}>
+ <Text> <AntDesign name="heart" style={{color:colors.orange}} size={24}  /></Text>
+ </View>
   <Text style={styles.descripTitle} preset='h2'>Description</Text>
   <Text style={styles.description}>{description}</Text>
   <View style={styles.pricingView}>
@@ -101,6 +104,19 @@ const styles = StyleSheet.create({
   descripTitle:{
     paddingLeft:spacing[5],
     marginTop:spacing[8],
+  },
+  loveIcon:{
+    flexDirection:'row',
+    alignItems:'center',
+    justifyContent:"center",
+    backgroundColor:colors.white,
+    width: 64,
+    height:64,
+    borderRadius:'50%',
+    marginTop:-30,
+    position:'absolute',
+    right:spacing[11],
+    
   },
   description:{
     padding:spacing[5],
