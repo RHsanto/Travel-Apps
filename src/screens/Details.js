@@ -28,25 +28,25 @@ const Details = ({route}) => {
   <Text style={styles.descripTitle} preset='h2'>Description</Text>
   <Text style={styles.description}>{description}</Text>
   <View style={styles.pricingView}>
-    <View style={styles.commonView}>
-      <Text style={styles.pricingTitle}>PRICE</Text>
-      <View>
-      <Text>${price}</Text> 
-      <Text>/person</Text>
+    <View >
+      <Text style={styles.commonColor}>PRICE</Text>
+      <View style={styles.commonView}>
+      <Text preset='h1' style={styles.commonTitle}>${price}</Text> 
+      <Text style={styles.commonColor}>/person</Text>
       </View>
     </View>
-    <View style={styles.commonView}>
-      <Text  style={styles.pricingTitle}>RATING</Text>
-      <View>
-      <Text >{rating}</Text> 
-      <Text>/5</Text>
+    <View >
+      <Text  style={styles.commonColor}>RATING</Text>
+      <View style={styles.commonView}>
+      <Text preset='h1' style={styles.commonTitle}>{rating}</Text> 
+      <Text style={styles.commonColor}>/5</Text>
       </View>
     </View>
-    <View style={styles.commonView}>
-      <Text style={styles.pricingTitle}>DURATION</Text>
-      <View>
-      <Text>{duration}</Text> 
-      <Text>hours</Text>
+    <View >
+      <Text style={styles.commonColor}>DURATION</Text>
+      <View style={styles.commonView}>
+      <Text preset='h1' style={styles.commonTitle}>{duration}</Text> 
+      <Text style={styles.commonColor}>hours</Text>
       </View>
     </View>
    
@@ -103,9 +103,15 @@ const styles = StyleSheet.create({
     paddingHorizontal:spacing[5]
   },
   commonView:{
+    paddingTop:5,
     flexDirection:'row',
+    alignItems:'baseline'
   },
-  pricingTitle:{
+  commonColor:{
     color:colors.grey
+  },
+  commonTitle:{
+    color:colors.orange,
   }
+
 })
