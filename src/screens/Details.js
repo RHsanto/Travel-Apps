@@ -1,5 +1,6 @@
 import React from 'react';
-import { ImageBackground, SafeAreaView, ScrollView, StyleSheet, View } from 'react-native';
+import { ImageBackground, Pressable, SafeAreaView, ScrollView, 
+  StyleSheet, View } from 'react-native';
 import Text from '../components/Text/Text';
 import { FontAwesome5 } from '@expo/vector-icons';
 import { colors } from '../theme/color';
@@ -25,6 +26,7 @@ const Details = ({route}) => {
  </ImageBackground>
  {/* Description */}
  <View style={styles.descriptionView}>
+
   <Text style={styles.descripTitle} preset='h2'>Description</Text>
   <Text style={styles.description}>{description}</Text>
   <View style={styles.pricingView}>
@@ -49,9 +51,16 @@ const Details = ({route}) => {
       <Text style={styles.commonColor}>hours</Text>
       </View>
     </View>
-   
+  </View>
+ 
+{/* Book now btn */}
+  <View style={styles.btnView}>
+   <Pressable style={styles.bookBtn}>
+    <Text preset='h3' style={styles.btnText}>Book Now</Text>
+   </Pressable>
   </View>
  </View>
+
 </View>
 
 
@@ -112,6 +121,18 @@ const styles = StyleSheet.create({
   },
   commonTitle:{
     color:colors.orange,
+  },
+  btnView:{
+   paddingHorizontal:spacing[5],
+   paddingVertical:spacing[10]
+  },
+  bookBtn:{
+    backgroundColor:colors.orange,
+    alignItems:'center',
+    borderRadius:10
+  },
+  btnText:{
+    padding:spacing[4],
+    color:colors.white
   }
-
 })
