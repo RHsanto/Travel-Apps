@@ -79,10 +79,10 @@ const styles = StyleSheet.create({
   paddingLeft:spacing[5]
   },
   detailsImage:{
-    height: 400,
+    height: 460,
   },
   discoverItemTitle:{
-    marginTop:300,
+    marginTop:333,
     color:colors.white,
     paddingRight:spacing[5],
     width:314
