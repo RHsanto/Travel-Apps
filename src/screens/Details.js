@@ -10,7 +10,7 @@ const Details = ({route}) => {
   return (
     <SafeAreaView>
       <ScrollView>
-      <View >
+<View >
  {/* image */}
  <ImageBackground style={styles.detailsImage} source={fullImage}>
   <View style={styles.detailsView}>
@@ -23,7 +23,11 @@ const Details = ({route}) => {
             </View>
     </View> 
  </ImageBackground>
-      </View>
+
+ 
+</View>
+
+
       </ScrollView>
     </SafeAreaView>
   );
@@ -47,7 +51,6 @@ const styles = StyleSheet.create({
   discoverItemLocation:{
     marginTop:7,
     flexDirection:'row',
-   
   },
   discoverItemLocationText:{
     color:colors.white,
