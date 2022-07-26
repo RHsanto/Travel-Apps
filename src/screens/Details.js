@@ -9,7 +9,7 @@ const Details = () => {
       <View>
       <Text>Details
 Details</Text>
-    </View>
+      </View>
       </ScrollView>
     </SafeAreaView>
   );
