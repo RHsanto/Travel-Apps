@@ -26,7 +26,31 @@ const Details = ({route}) => {
  {/* Description */}
  <View style={styles.descriptionView}>
   <Text style={styles.descripTitle} preset='h2'>Description</Text>
-  <Text>{description}</Text>
+  <Text style={styles.description}>{description}</Text>
+  <View style={styles.pricingView}>
+    <View style={styles.commonView}>
+      <Text style={styles.pricingTitle}>PRICE</Text>
+      <View>
+      <Text>${price}</Text> 
+      <Text>/person</Text>
+      </View>
+    </View>
+    <View style={styles.commonView}>
+      <Text  style={styles.pricingTitle}>RATING</Text>
+      <View>
+      <Text >{rating}</Text> 
+      <Text>/5</Text>
+      </View>
+    </View>
+    <View style={styles.commonView}>
+      <Text style={styles.pricingTitle}>DURATION</Text>
+      <View>
+      <Text>{duration}</Text> 
+      <Text>hours</Text>
+      </View>
+    </View>
+   
+  </View>
  </View>
 </View>
 
@@ -68,6 +92,20 @@ const styles = StyleSheet.create({
   descripTitle:{
     paddingLeft:spacing[5],
     marginTop:spacing[8],
-    marginBottom:spacing[5]
+  },
+  description:{
+    padding:spacing[5],
+    color:colors.grey
+  },
+  pricingView:{
+    flexDirection:'row',
+    justifyContent:'space-between',
+    paddingHorizontal:spacing[5]
+  },
+  commonView:{
+    flexDirection:'row',
+  },
+  pricingTitle:{
+    color:colors.grey
   }
 })
