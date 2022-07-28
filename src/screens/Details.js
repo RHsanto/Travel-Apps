@@ -70,7 +70,7 @@ const Details = ({route}) => {
       </ScrollView>
   </SafeAreaView>
   );
-};
+};    
 
 export default Details;
 
