@@ -73,7 +73,7 @@ const Details = ({route}) => {
 };      
 
 export default Details;
-
+ 
 const styles = StyleSheet.create({
   detailsView:{
   paddingLeft:spacing[5]
