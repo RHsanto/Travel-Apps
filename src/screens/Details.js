@@ -71,7 +71,7 @@ const Details = ({route}) => {
   </SafeAreaView>
   );  
 };                 
-  
+     
 export default Details;
  
 const styles = StyleSheet.create({
