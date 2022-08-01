@@ -62,7 +62,7 @@ const Details = ({route}) => {
     <Text preset='h3' style={styles.btnText}>Book Now</Text>
    </Pressable>
   </View>
- </View>
+ </View>  
 
 </View>
 
