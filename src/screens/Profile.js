@@ -7,8 +7,8 @@ const Profile = () => {
    <SafeAreaView>
     <ScrollView>
     <View>
-      <Text>Profile
-Profile</Text>
+      <Text>Add Profile
+      </Text>
     </View>
     </ScrollView>
    </SafeAreaView>
