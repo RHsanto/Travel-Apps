@@ -9,7 +9,7 @@ const Profile = () => {
     <View>
       <Text>Add Profile</Text>
     </View>   
-    </ScrollView>   
+    </ScrollView>     
    </SafeAreaView>
   );
 };
