@@ -10,7 +10,6 @@ import Home from './src/screens/Home';
 import Liked from './src/screens/Liked';
 import Profile from './src/screens/Profile';
 import Details from './src/screens/Details';
-
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 
