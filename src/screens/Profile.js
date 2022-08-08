@@ -7,7 +7,7 @@ const Profile = () => {
    <SafeAreaView>
     <ScrollView>
     <View>
-      <Text>This is Profile Page</Text>
+      <Text>This is Profile screens</Text>
     </View>   
     </ScrollView>     
    </SafeAreaView>
