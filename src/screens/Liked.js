@@ -7,7 +7,7 @@ const Liked = () => {
    <SafeAreaView>
     <ScrollView>
     <View>
-    <Text>Liked Liked</Text>
+    <Text>I love Liked Liked</Text>
     </View>
     </ScrollView>
    </SafeAreaView>
