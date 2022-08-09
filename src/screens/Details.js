@@ -63,7 +63,6 @@ const Details = ({route}) => {
    </Pressable>
   </View>
  </View>  
-
 </View>
 
 
