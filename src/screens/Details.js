@@ -64,9 +64,7 @@ const Details = ({route}) => {
   </View>
  </View>  
 </View>
-
-
-      </ScrollView>
+</ScrollView>
   </SafeAreaView>
   );    
 };                 
