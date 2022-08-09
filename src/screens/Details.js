@@ -7,7 +7,7 @@ import { colors } from '../theme/color';
 import { spacing } from '../theme/spacing';
 const Details = ({route}) => {
   const travels =route.params.item;
-  const {id,fullImage,description,price,rating,duration,location,title} =travels
+  const {fullImage,description,price,rating,duration,location,title} =travels
   return (
     <SafeAreaView>
       <ScrollView>
