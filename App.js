@@ -12,7 +12,6 @@ import Profile from './src/screens/Profile';
 import Details from './src/screens/Details';
 
 const Stack = createNativeStackNavigator();
-
 const Tab = createBottomTabNavigator();
 
 const TabNavigator = () => {
