@@ -63,8 +63,8 @@ const Details = ({route}) => {
    </Pressable>
   </View>
  </View>  
-</View>
-</ScrollView>
+</View> 
+</ScrollView>  
   </SafeAreaView>
   );    
 };                 
