@@ -1,7 +1,7 @@
 const discoverData=[
   {
     id:'d-1',
-    title:'Kayaking in the Tofino Sea',
+    title:'Kayaking in the Torino Sea',
     location:'Canada',
     image:require('../images/kayak.png'),
     fullImage:require('../images/kayak-big.png'),
