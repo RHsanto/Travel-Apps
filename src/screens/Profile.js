@@ -7,7 +7,8 @@ const Profile = () => {
    <SafeAreaView>
     <ScrollView>
     <View>
-      <Text>This is Profile </Text>
+      <Text> kita kormu buji nah
+         </Text>
     </View>   
     </ScrollView>     
    </SafeAreaView>
