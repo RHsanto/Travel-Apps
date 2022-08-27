@@ -27,7 +27,7 @@ const activitiesData = [
   {
     id: 'activities-4',
     title: 'WATER SKI',
-    image: require('../images/water-ski.png'),
+    image: require('../images/water-ski.png'), 
   },
 ];
 
