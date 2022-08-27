@@ -1,7 +1,7 @@
 const learnMoreData = [
   {
     id: 'learnMore-1',
-    title: 'Snorkelling in Mexico',
+    title: 'snorkeling in Mexico',
     image: require('../images/boatbeach.png'),
   },
   {
