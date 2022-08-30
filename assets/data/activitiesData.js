@@ -19,7 +19,7 @@ const activitiesData = [
     title: 'BIKE',
     image: require('../images/bike.png'),
   },
-  {  
+  {     
     id: 'activities-5',
     title: 'TENNIS',
     image: require('../images/tennis.png'),
