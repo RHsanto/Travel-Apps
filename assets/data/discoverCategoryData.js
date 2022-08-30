@@ -6,7 +6,7 @@ const discoverCategoriesData = [
   { 
     id: 'discover-categories-2',
     text: 'Destinations',
-  },
+  },  
   {
     id: 'discover-categories-3',
     text: 'Cities',
