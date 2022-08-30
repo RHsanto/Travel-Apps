@@ -2,7 +2,7 @@ const discoverCategoriesData = [
   {
     id: 'discover-categories-1',
     text: 'All',
-  },
+  },   
   { 
     id: 'discover-categories-2',
     text: 'Destinations',
