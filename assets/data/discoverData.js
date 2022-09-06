@@ -10,7 +10,7 @@ const discoverData=[
     price:50,
     rating:5,
     duration:2
-  },
+  },   
   {
     id:'d-2',
     title:'Hiking the Grand Canyon ',
