@@ -17,4 +17,4 @@ const discoverCategoriesData = [
   },
 ];
 
-export default discoverCategoriesData;
+export default discoverCategoriesData; 
