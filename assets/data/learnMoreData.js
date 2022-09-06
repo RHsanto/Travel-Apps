@@ -13,7 +13,7 @@ const learnMoreData = [
     id: 'learnMore-3',
     title: 'Tour of the Australia Outback',
     image: require('../images/australia.png'),
-  },
+  },  
 ];
 
 export default learnMoreData;
