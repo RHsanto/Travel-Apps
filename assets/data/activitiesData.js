@@ -18,7 +18,7 @@ const activitiesData = [
     id: 'activities-6',
     title: 'BIKE',
     image: require('../images/bike.png'),
-  },
+  },  
   {     
     id: 'activities-5',
     title: 'TENNIS',
