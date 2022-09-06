@@ -30,7 +30,7 @@ const TabNavigator = () => {
         options={{
           tabBarIcon: ({color}) => (
             <Entypo name="home" size={32} color={color} />
-          ),
+          ),   
         }}
       />
       <Tab.Screen
