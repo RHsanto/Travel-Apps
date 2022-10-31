@@ -1,6 +1,6 @@
 const learnMoreData = [
   {
-    id: 'learnMore-1',
+   id: 'learnMore-1',
     title: 'snorkeling in Mexico',
     image: require('../images/boatbeach.png'),
   },
